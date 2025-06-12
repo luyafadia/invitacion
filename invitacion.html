@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación a la Albercada</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #00c6ff, #0072ff);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px 20px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: slideUp 1.5s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    .emoji {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: bounce 2s infinite;
+    }
+
+    .details {
+      background: rgba(255,255,255,0.2);
+      border-radius: 15px;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .details p {
+      margin: 8px 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      background: #fff;
+      color: #0072ff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .details {
+        font-size: 1em;
+      }
+
+      .btn {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">🏊‍♂️☀️🎉</div>
+    <h1>¡Pool party!</h1>
+    <p>Te invito a pasar un día increíble con agua, sol y amigos.</p>
+
+    <div class="details">
+      <p><strong>📅 Fecha:</strong> Viernes 20 de junio</p>
+      <p><strong>🕒 Hora:</strong> Apartir de la 1:00 PM</p>
+      <p><strong>🎒 Trae:</strong> Traje de baño, toalla y mucha energía</p>
+      <p><strong>💰 Cooperacion:</strong> $100 pesos</p>
+
+    </div>
+
+   <a href="https://wa.me/529626011845?text=¡Confirmo%20mi%20asistencia%20a%20la%20albercada!" class="btn" target="_blank">Confirmar asistencia</a>
+
+
+    <p class="footer">¡Nos vemos pronto! 😎</p>
+  </div>
+</body>
+</html>
